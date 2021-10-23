@@ -1,0 +1,634 @@
+/* Career Tree Page 1 CSS */
+
+* {
+    font-family: "Roboto Mono", monospace;
+    padding: 5px 10px;
+  }
+  
+  /* Navbar CSS */
+  .navbar {
+    /* background-color: #DBE0E4; */
+    display: flex;
+    justify-content: end;
+    margin: 20px 0 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #9d3f57;
+    font-size: 1.25em;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  
+  /* Add a color and size when hover link */
+  .navbar a:hover {
+    opacity: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Add a color to the active link */
+  .navbar a.active {
+    color: #74273a;
+  }
+  
+  /* Career Div CSS */
+  .careers {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .careers h2 {
+    color: #9d3f57;
+    text-align: center;
+  }
+  
+  .careers p {
+    text-align: center;
+    margin-bottom: 3.53vh;
+  }
+  
+  .careers hr {
+    width: 10%;
+    padding: 0;
+    border: 1px solid #9d3f57;
+    background-color: #9d3f57;
+  }
+  
+  .careers ul {
+    list-style: square;
+  }
+  
+  /* careers div width for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .careers {
+      width: 80%;
+    }
+  }
+  
+  .enter h2 {
+    margin-top: 0;
+  }
+  
+  /* Grid 1 for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .container {
+      display: grid;
+      grid-gap: 5.9vh;
+      grid-template-columns: auto auto auto;
+      grid-template-areas: "column1 column2 column3";
+    }
+  
+    .column1 {
+      grid-area: column1;
+    }
+  
+    .column2 {
+      grid-area: column2;
+    }
+  
+    .column3 {
+      grid-area: column3;
+    }
+  }
+  
+  /* careers div width for tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .careers{
+      width: 90%;
+    }
+  }
+  
+  /* Grid 1 for tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "column1 column2"
+        "column3 column3";
+    }
+  
+    .column1 {
+      grid-area: column1;
+    }
+  
+    .column2 {
+      grid-area: column2;
+    }
+  
+    .column3 {
+      grid-area: column3;
+    }
+    .column3 h3 {
+      margin-top: 0;
+    }
+  }
+  
+  /* careers div width for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .careers .ls {
+      width: 100%;
+    }
+  }
+  
+  /* Grid 1 for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "column1"
+        "column2"
+        "column3";
+    }
+  
+    .column1 {
+      grid-area: column1;
+    }
+  
+    .column2 {
+      grid-area: column2;
+    }
+  
+    .column3 {
+      grid-area: column3;
+    }
+  }
+  
+  /* Technical Level Career CSS */
+  .tech {
+    background-color: #f0f0f0;
+    padding: 20px 10px;
+  }
+  
+  /* Grid 2 for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .container2 {
+      display: grid;
+      grid-gap: 5.9vh;
+      grid-template-columns: auto auto auto;
+      grid-template-areas: "column4 column5 column6";
+    }
+  
+    .column4 {
+      grid-area: column4;
+    }
+  
+    .column5 {
+      grid-area: column5;
+    }
+  
+    .column6 {
+      grid-area: column6;
+    }
+  }
+  
+  /* Grid 2 for tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .container2 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "column4 column5"
+        "column6 column6";
+    }
+  
+    .column4 {
+      grid-area: column4;
+    }
+  
+    .column5 {
+      grid-area: column5;
+    }
+  
+    .column6 {
+      grid-area: column6;
+    }
+    .column6 h3 {
+      margin-top: 0;
+    }
+  }
+  
+  /* Grid 2 for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .container2 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "column4"
+        "column5"
+        "column6";
+    }
+  
+    .column4 {
+      grid-area: column4;
+    }
+  
+    .column5 {
+      grid-area: column5;
+    }
+  
+    .column6 {
+      grid-area: column6;
+    }
+  }
+  
+  /* Grid 3 for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .container3 {
+      display: grid;
+      grid-gap: 5.9vh;
+      grid-template-columns: auto auto auto;
+      grid-template-areas: "column7 column8 column9";
+    }
+  
+    .column7 {
+      grid-area: column7;
+    }
+  
+    .column8 {
+      grid-area: column8;
+    }
+  
+    .column9 {
+      grid-area: column9;
+    }
+  }
+  
+  /* Grid 3 for tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .container3 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "column7 column8"
+        "column9 column9";
+    }
+  
+    .column7 {
+      grid-area: column7;
+    }
+  
+    .column8 {
+      grid-area: column8;
+    }
+  
+    .column9 {
+      grid-area: column9;
+    }
+  
+    .column9 h3 {
+      margin-top: 0;
+    }
+  }
+  
+  /* Grid 3 for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .container3 {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas:
+        "column7"
+        "column8"
+        "column9";
+    }
+  
+    .column7 {
+      grid-area: column7;
+    }
+  
+    .column8 {
+      grid-area: column8;
+    }
+  
+    .column9 {
+      grid-area: column9;
+    }
+  }
+  
+  #footer {
+    margin-top: 5vh;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: right;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    color: #9d3f57;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  
+  #footer a:hover {
+    opacity: 1;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  
+  #footer a.active {
+    color: #74273a;
+  }
+  
+  /* For desktop screens */
+  @media only screen and (min-width: 1025px) {
+    #footer {
+      text-align: left;
+      font-size: 1.5vh;
+      text-align: center;
+    }
+  }
+  
+  /* For tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    #footer {
+      text-align: left;
+      font-size: 1.5vh;
+      text-align: center;
+    }
+  }
+  
+  /* For mobile screens*/
+  @media only screen and (max-width: 480px){
+    #footer {
+      text-align: center;
+      font-size: 1.5vh;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Page 2: Lifestyle CSS */
+  .ls {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ls {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "section1"
+    "section2"
+    "section3";
+  }
+  
+  .section1 {
+    grid-area: section1;
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+  }
+  
+  .section2 {
+    grid-area: section2;
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4; */
+  }
+  
+  .section3 {
+    grid-area: section3;
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5; */
+  }
+  
+  /* Lifestlye div width for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .ls {
+      width: 80%;
+    }
+  }
+  
+  /* Lifestlye div width for tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .ls {
+      width: 90%;
+    }
+  }
+  
+  /* Lifestlye div width for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .ls {
+      width: 100%;
+    }
+  }
+  
+  /* section 1 for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .section1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .video{
+      height: 47.1vh;
+    }
+    .video object{
+      width: 50%;
+      height: 90%;
+    }
+  }
+  
+  /* section 1 for tablet/ipad screens */
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .section1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .video {
+      height: 47.1vh;
+    }
+    
+    .video object{
+      width: 60%;
+      height: 80%;
+    }
+  }
+
+
+  /* section 1 for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .section1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .video {
+      height: 23.53vh;
+    }
+
+    .video object{
+      width: 80%;
+      height: 80%;
+    }
+  }
+  
+  
+  /* Section 2 */
+  .section2 {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+  }
+  
+  /* section 2 for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .section2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .video{
+      height: 47.1vh;
+    }
+    .video object{
+      width: 50%;
+      height: 90%;
+    }
+  }
+  
+  /* section 2 for tablet/ipad screens*/
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .section2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* section 2  for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .section2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  /* Section 3 */
+  .section3 {
+    padding: 10px 0;
+  }
+  
+  /* section 3 for desktop screens */
+  @media only screen and (min-width: 1025px) {
+    .section3{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .video{
+      height: 47.1vh;
+    }
+    .video object{
+      width: 50%;
+      height: 90%;
+    }
+  }
+  
+    /* section 3 for tablet/ipad screens*/
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .section3{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+  }
+  
+  /* section 3 for mobile screens*/
+  @media only screen and (max-width: 480px){
+    .section3{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  /* elements in all three sections */
+  
+  .text {
+    flex-direction: column;
+    font-size: .9em;
+  }
+  
+  .text h2 {
+    color: #9d3f57;
+  }
+  
+  .text p {
+    color: black;
+  }
+  
+  
+  
+  /* form for video links */
+  #form {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 1.8vh 3.2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  /*  hover link css*/
+  #form:hover {
+    color: lightgrey;
+  }
+  
+  /* active link  css*/
+  #form:active {
+    color: #74273a;
+  }
+  
+  /* make vidoe responsive */
+  
+  /* parent */
+  .video{
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  
+  /* child */
+  .video object{ 
+    display: block;
+    align-self: center;
+  }
+
+  
